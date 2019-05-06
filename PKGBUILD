@@ -2,7 +2,7 @@
 # Contributor: Josip Ponjavic <josipponjavic at gmail dot com> 
 
 pkgname=rtags-git
-pkgver=v2.18.r103.g1ea5e1d1
+pkgver=v2.38.yz.r0.g03f99810
 pkgrel=1
 pkgdesc="RTags is a client/server application that indexes C/C++ code."
 arch=('i686' 'x86_64')
@@ -13,8 +13,9 @@ makedepends=('cmake' 'git' 'llvm' 'zlib')
 optdepends=('bash-completion: for bash completion' 'zlib' 'lua: Lua bindings')
 provides=('rtags')
 conflicts=('rtags')
-source=("git+${url}.git")
+source=("git+https://github.com/YorkZ/rtags#branch=york")
 sha256sums=('SKIP')
+groups=('modified')
 
 pkgver() {
     cd rtags
